@@ -1,4 +1,6 @@
-﻿![Descrição da Logo](src/assets/logo_idn_dev.png)
+﻿<p align="center">
+  <img src="src/assets/logo.png" alt="Logo" width="617">
+</p>
 
 # Título do Projeto
 Olá esse é um projeto teste modelagem de domínio rico
