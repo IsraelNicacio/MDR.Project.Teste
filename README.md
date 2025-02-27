@@ -10,7 +10,7 @@
 
 ###
 
-<h2 align="left">O código foi desenvolvido tecnologias:</h2>
+<h2 align="left">O código foi desenvolvido com tecnologias:</h2>
 
 ###
 
