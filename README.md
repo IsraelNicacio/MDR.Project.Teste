@@ -8,28 +8,39 @@ Olá esse é um projeto teste modelagem de domínio rico
 #### Retorna todos os itens
 
 ```http
-  GET /api/items
+  GET /tenant/pessoas
 ```
 
-| Parâmetro   | Tipo       | Descrição                           |
-| :---------- | :--------- | :---------------------------------- |
-| `api_key` | `string` | **Obrigatório**. A chave da sua API |
+| Parâmetro   | Tipo       | Obrigatório | Descrição                           |
+| :---------- | :--------- | :---------  | :---------------------------------- |
+| `api_key` | `string` | **Sim**| A chave da sua API |
 
-#### Retorna um item
+#### Retorna coleção de pessoas
 
 ```http
-  GET /api/items/${id}
+  GET /tenant/pessoa/${id}
 ```
 
-| Parâmetro   | Tipo       | Descrição                                   |
-| :---------- | :--------- | :------------------------------------------ |
-| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
+| Parâmetro   | Tipo       | Obrigatório | Descrição                           |
+| :---------- | :--------- | :---------  | :---------------------------------- |
+| `id`      | `Guid` | **Sim**| O ID da pessoa que você quer |
 
 #### add(num1, num2)
 
 Recebe dois números e retorna a sua soma.
 
-<h2 align="left">O código foi desenvolvido com tecnologias:</h2>
+
+## Stack utilizada
+
+**Back-end:** C#, .Net-8
+
+
+## Etiquetas
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+## O código foi desenvolvido com tecnologias:
 
 ###
 
