@@ -1,14 +1,33 @@
-﻿<h1 align="left">Olá esse é um projeto teste modelagem de domínio rico</h1>
+﻿![Descrição da Logo](assets/logo_idn_dev.png)
 
-###
+# Título do Projeto
+Olá esse é um projeto teste modelagem de domínio rico
 
-<p align="left">Sou Israel</p>
+## Documentação da API
 
-###
+#### Retorna todos os itens
 
-<p align="left">✨ Creating bugs since ...<br>📚 I'm currently learning ...<br>🎯 Goals: ...<br>🎲 Fun fact: ...</p>
+```http
+  GET /api/items
+```
 
-###
+| Parâmetro   | Tipo       | Descrição                           |
+| :---------- | :--------- | :---------------------------------- |
+| `api_key` | `string` | **Obrigatório**. A chave da sua API |
+
+#### Retorna um item
+
+```http
+  GET /api/items/${id}
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `string` | **Obrigatório**. O ID do item que você quer |
+
+#### add(num1, num2)
+
+Recebe dois números e retorna a sua soma.
 
 <h2 align="left">O código foi desenvolvido com tecnologias:</h2>
 
