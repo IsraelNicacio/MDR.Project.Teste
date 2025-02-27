@@ -27,7 +27,7 @@ Olá esse é um projeto teste modelagem de domínio rico
 
 #### add(num1, num2)
 
-Recebe dois números e retorna a sua soma.
+Recebe o Id da pessoa e retorna todos os dados da pessoa pesquisada.
 
 
 ## Stack utilizada
