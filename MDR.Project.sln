@@ -21,6 +21,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDR.Cadastro.Application", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MDR.Cadastro.Api", "src\Cadastro\MDR.Cadastro.Api\MDR.Cadastro.Api.csproj", "{F004968A-2EA8-468A-AE64-1FA623D5BA52}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "assets", "assets", "{43C05AD5-7FF5-4EEA-BE21-A7FBCA9A8380}"
+	ProjectSection(SolutionItems) = preProject
+		src\assets\logo_idn_dev.png = src\assets\logo_idn_dev.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +63,6 @@ Global
 		{A395CF1A-6ACD-4FDB-97F7-5C1EB42D7D65} = {2CED4C61-F086-404A-B3E7-2372CCF315BD}
 		{DD9729E2-5D9D-4918-A289-5A2CA622C20F} = {2CED4C61-F086-404A-B3E7-2372CCF315BD}
 		{F004968A-2EA8-468A-AE64-1FA623D5BA52} = {2CED4C61-F086-404A-B3E7-2372CCF315BD}
+		{43C05AD5-7FF5-4EEA-BE21-A7FBCA9A8380} = {C886AE69-4300-4AA7-93FB-323EB82FEFDE}
 	EndGlobalSection
 EndGlobal
