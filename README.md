@@ -1,4 +1,4 @@
-﻿![Descrição da Logo](assets/logo_idn_dev.png)
+﻿![Descrição da Logo](src/assets/logo_idn_dev.png)
 
 # Título do Projeto
 Olá esse é um projeto teste modelagem de domínio rico
