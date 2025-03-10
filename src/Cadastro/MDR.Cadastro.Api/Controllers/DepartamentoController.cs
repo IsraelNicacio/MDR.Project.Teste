@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MDR.Cadastro.Api.Controllers;
 
+[ApiController]
+[Route("{tenant}/[controller]")]
 public class DepartamentoController : ControllerBase
 {
     private readonly IDepartamentoService _departamentoService;
