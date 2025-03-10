@@ -6,4 +6,22 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore" Version="9.0.2" />
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="9.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="microsoft.entityframeworkcore.relational" Version="9.0.2" />
+    <PackageReference Include="microsoft.entityframeworkcore.tools" Version="9.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MDR.Core\MDR.Core.csproj" />
+    <ProjectReference Include="..\MDR.CadastroDomain\MDR.CadastroDomain.csproj" />
+  </ItemGroup>
+
 </Project>

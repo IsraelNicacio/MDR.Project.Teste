@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="microsoft.entityframeworkcore.design" Version="9.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="9.0.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MDR.Cadastro.Application\MDR.Cadastro.Application.csproj" />
+    <ProjectReference Include="..\MDR.CadastroDomain\MDR.CadastroDomain.csproj" />
+    <ProjectReference Include="..\MDR.Infrastructure.Data\MDR.Infrastructure.Data.csproj" />
   </ItemGroup>
 
 </Project>
