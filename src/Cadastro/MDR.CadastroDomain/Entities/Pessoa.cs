@@ -41,7 +41,7 @@ public class Pessoa : Entity, IAggregateRoot
 
     public void AlterarIdade(int idade)
     {
-        DomainValidation.ValidarMinimoMaximo(idade, 1, 120, "A Idade deve ser informada entre 1 e 120 anos.")
+        DomainValidation.ValidarMinimoMaximo(idade, 1, 120, "A Idade deve ser informada entre 1 e 120 anos.");
     }
 
     public void AlterarDepartamento(Departamento departamento)
@@ -59,7 +59,7 @@ public class Pessoa : Entity, IAggregateRoot
         DomainValidation.ValidarCaracteres(Nome, 60, "O Nome deve ter no maximo 120 caracteres");
         DomainValidation.ValidarSeVazioNulo(Sobrenome, "O Sobrenome deve ser preenchido");
         DomainValidation.ValidarCaracteres(Sobrenome, 60, "O Sobrenome deve ter no maximo 120 caracteres");
-        DomainValidation.ValidarMinimoMaximo(Idade, 1, 120, "A Idade deve ser informada entre 1 e 120 anos.")
+        DomainValidation.ValidarMinimoMaximo(Idade, 1, 120, "A Idade deve ser informada entre 1 e 120 anos.");
     }
 
     #endregion
