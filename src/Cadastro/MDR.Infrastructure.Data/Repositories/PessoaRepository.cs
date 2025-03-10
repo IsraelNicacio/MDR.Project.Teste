@@ -22,11 +22,13 @@ public class PessoaRepository : IPessoaRepository
     public void EditarPessoa(Pessoa pessoa) 
         => _context.Update(pessoa);
 
-    public async Task<IEnumerable<Departamento>> RecuperarDepartamentos(Guid id)
-        => await _context.Departamentos.AsNoTracking().ToListAsync();
     public void AdicionarDepartamento(Departamento departamento)
         => _context.Departamentos.Add(departamento);
     public void EditarDepartamento(Departamento departamento)
         => _context.Update(departamento);
     public void Dispose() => GC.SuppressFinalize(this);
+    public async Task<IEnumerable<Departamento>> RecuperarDepartamentos()
+        => await _context.Departamentos.AsNoTracking().ToListAsync();
+    public async Task<Departamento> RecuperarDepartamentoPorId(Guid id)
+        => await _context.Departamentos.AsNoTracking().FirstOrDefaultAsync(f => f.Id == id);
 }

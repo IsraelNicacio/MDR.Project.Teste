@@ -11,7 +11,8 @@ public interface IPessoaRepository : IRepository<Pessoa>
     void AdicionarPessoa(Pessoa pessoa);
     void EditarPessoa(Pessoa pessoa);
 
-    Task<IEnumerable<Departamento>> RecuperarDepartamentos(Guid id);
+    Task<IEnumerable<Departamento>> RecuperarDepartamentos();
+    Task<Departamento> RecuperarDepartamentoPorId(Guid id);
     void AdicionarDepartamento(Departamento departamento);
     void EditarDepartamento(Departamento departamento);
 }

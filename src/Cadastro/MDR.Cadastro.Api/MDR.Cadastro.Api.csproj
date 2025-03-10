@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MDR.Cadastro.Application\MDR.Cadastro.Application.csproj" />
-    <ProjectReference Include="..\MDR.CadastroDomain\MDR.CadastroDomain.csproj" />
     <ProjectReference Include="..\MDR.Infrastructure.Data\MDR.Infrastructure.Data.csproj" />
   </ItemGroup>
 
