@@ -10,4 +10,14 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MDR.Cadastro.Application\MDR.Cadastro.Application.csproj" />
+    <ProjectReference Include="..\MDR.CadastroDomain\MDR.CadastroDomain.csproj" />
+    <ProjectReference Include="..\MDR.Infrastructure.Data\MDR.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
 </Project>
