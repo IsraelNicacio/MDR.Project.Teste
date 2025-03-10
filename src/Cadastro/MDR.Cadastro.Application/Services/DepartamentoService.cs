@@ -30,6 +30,9 @@ public class DepartamentoService : IDepartamentoService
         _unitOfWork.Commit();
     }
 
-    public async Task<IEnumerable<DepartamentoDTO>> RecuperarDepartamentos(Guid id)
-        => _mapper.Map<IEnumerable<DepartamentoDTO>>(await _unitOfWork.pessoaRepository.RecuperarDepartamentos(id));
+    public async Task<IEnumerable<DepartamentoDTO>> RecuperarDepartamentos()
+        => _mapper.Map<IEnumerable<DepartamentoDTO>>(await _unitOfWork.pessoaRepository.RecuperarDepartamentos());
+
+    public async Task<DepartamentoDTO> RecuperarDepartamentoPorId(Guid id)
+        => _mapper.Map<DepartamentoDTO>(await _unitOfWork.pessoaRepository.RecuperarDepartamentoPorId(id));
 }
