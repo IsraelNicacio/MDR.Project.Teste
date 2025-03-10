@@ -6,4 +6,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MDR.Core\MDR.Core.csproj" />
+    <ProjectReference Include="..\MDR.CadastroDomain\MDR.CadastroDomain.csproj" />
+    <ProjectReference Include="..\MDR.Infrastructure.Data\MDR.Infrastructure.Data.csproj" />
+  </ItemGroup>
+
 </Project>
