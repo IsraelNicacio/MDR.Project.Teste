@@ -13,7 +13,7 @@ public static class TenantConfiguration
         {
             var optionBuilder = new DbContextOptionsBuilder<CadastroContext>();
             var httpContext = provider.GetService<IHttpContextAccessor>()?.HttpContext;
-            var tenant = httpContext.Request.Path.Value?.Split("/", StringSplitOptions.RemoveEmptyEntries)[0];
+            var tenant = httpContext?.Request.Path.Value?.Split("/", StringSplitOptions.RemoveEmptyEntries)[0];
             var connectionString = configuration.GetConnectionString("TenantDataBase")?.Replace("_DATABASE_", tenant);
 
             optionBuilder.UseSqlServer(connectionString)
